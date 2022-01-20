@@ -4,6 +4,6 @@
 
 #service apache2 restart
 
-echo "Listen ${PORT:-80}" > /etc/apache2/ports.conf
+echo "Listen ${PORT:-443}" > /etc/apache2/ports.conf
 
 /entrypoint.sh "$@"
